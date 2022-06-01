@@ -1,0 +1,43 @@
+{
+  "name": "express_webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack -w",
+    "start": "nodemon ./bin/www",
+    "webapp:dev": "concurrently 'npm:build' 'npm:start' "
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.17.10",
+    "@babel/preset-env": "^7.17.10",
+    "autoprefixer": "^10.4.5",
+    "babel-loader": "^8.2.5",
+    "babel-minify-webpack-plugin": "^0.3.1",
+    "concurrently": "^7.1.0",
+    "cookie-parser": "~1.4.4",
+    "css-loader": "^6.7.1",
+    "cssnano": "^5.1.7",
+    "debug": "~2.6.9",
+    "ejs": "^3.1.7",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "mini-css-extract-plugin": "^2.6.0",
+    "morgan": "~1.9.1",
+    "node-sass": "^7.0.1",
+    "postcss-loader": "^6.2.1",
+    "sass-loader": "^12.6.0",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2"
+  },
+  "dependencies": {
+    "three": "^0.140.0"
+  },
+  "browser": {
+    "child_process": false
+  }
+  
+}
